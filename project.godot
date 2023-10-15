@@ -23,7 +23,8 @@ shapes/paths/geometry_color=Color(0, 0, 0, 1)
 
 window/size/viewport_width=480
 window/size/viewport_height=480
-window/size/mode=2
+window/size/window_width_override=960
+window/size/window_height_override=960
 window/stretch/mode="canvas_items"
 
 [input]
