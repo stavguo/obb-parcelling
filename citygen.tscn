@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://dw24xxcd6485b"]
+
+[ext_resource type="Script" path="res://citygen.gd" id="1_u7nmq"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(240, 240)
+script = ExtResource("1_u7nmq")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = -240.0
+offset_top = -240.0
+offset_right = 240.0
+offset_bottom = 240.0
+grow_vertical = 2
+color = Color(1, 0.933333, 0.8, 1)
