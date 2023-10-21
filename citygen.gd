@@ -1,8 +1,8 @@
 extends Node2D
 @export var max_radius: int = 200
 @export var min_radius: int = 60
-@export var points = 9
-@export var min_area = 500
+@export var points: int = 9
+@export var min_area: int = 500
 var block_color: Color
 
 # Called when the node enters the scene tree for the first time.
@@ -15,6 +15,9 @@ func _ready():
 func _input(event):
 	if event.is_action_pressed("regenerate"):
 		get_tree().reload_current_scene()
+	if event.is_action_pressed("screenshot"):
+		var image = get_viewport().get_texture().get_image()
+		image.save_png("screenshots/%s.png" % randi())
 
 func get_init_points():
 	var rads = 0

@@ -22,3 +22,6 @@ mono_crash.*.json
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# User-generated screenshots
+screenshots/*
